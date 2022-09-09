@@ -33,6 +33,7 @@ body{
 .nav-link{
     display: flex;
     margin-left: 680px;
+    
 }
 .header-nav-link{
     margin-left: 1rem;
@@ -43,9 +44,12 @@ body{
     transform: color .2s linear;
     margin-left: 20px;
     font-family: monaco, Consolas, Lucida Console, monospace;
+
 }
 .header-nav-link:hover{
    color:#60f0e4;
+   transition: 1s;
+   
 }
 .nav-link span{
     color: #60f0e4;
@@ -63,6 +67,7 @@ body{
     font-size: 1.0rem;
 
     cursor: pointer;
+    transition: 0.5s;
 }
 .nav-btn:hover{
     background-color:#37a49b;
@@ -141,6 +146,7 @@ body{
     font-size: 0.8rem;
     border-radius: 3px;
     font-family: monaco, Consolas, Lucida Console, monospace;
+    transition: 0.5s;
 }
 .btn-intro:hover{
     background-color:#37a49b;
@@ -165,6 +171,7 @@ body{
     width: 350px;
     opacity: 0.5;
     filter: alpha(opacity=50);
+    transition: 1s;
 }
 .photo:after {
     content: '';
@@ -209,7 +216,14 @@ li span{
 
     border-radius: 6px;
    
+    background-color:#3fffef;
+    opacity: 0.5;
+}
+.projects:hover{
     background-color:#162e50;
+    opacity: 1;
+    transition: 0.5s;
+
 }
 
 .projects a{
@@ -252,11 +266,10 @@ li span{
     height: 300px;
     width: 450px;
     opacity: 0.5;
-    filter: alpha(opacity=50);
 }
 .photo-work:after {
     content: '';
-    background: rgba(201, 26, 26, 0.7); /* фон с прозрачностью 70%*/
+    background: rgba(255, 23, 23, 0.7); /* фон с прозрачностью 70%*/
     display: block;
     position: absolute;
     width: 100%;
@@ -268,7 +281,8 @@ li span{
 .photo-work:hover {
     opacity: 1;
     filter: alpha(opacity=100);
-    }
+    transition: 0.5s;
+}
 
 /*MENTORS*/
 .content-mentors{
@@ -373,6 +387,7 @@ li span{
 }
 .mail p:hover{
     color:#37a49b;
+    transition: 0.5s;
  }
 .icons{
     margin: 10px 30px;
