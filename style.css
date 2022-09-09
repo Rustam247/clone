@@ -215,8 +215,24 @@ li span{
 .projects a{
     text-decoration: none;
     color:#939dc2;
+    line-height: 1;
 
 }
+.projects a::after{
+	display: flex;
+	position: center;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 2px; /*задаём ширину линии*/
+	background-color: #37a49b; /*задаём цвет линии*/
+	content: "";
+	transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+.projects a:hover:after,
+.projects a:focus:after {
+	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+
 .projects a:hover{
     color:#37a49b;
 }
@@ -284,6 +300,20 @@ li span{
 }
 .container-1 a:hover{
     color:#37a49b;
+}
+.container-1 a::after{
+	display: flex;
+	position: center;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 2px; /*задаём ширину линии*/
+	background-color: #37a49b; /*задаём цвет линии*/
+	content: "";
+	transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+.container-1 a:hover:after,
+.container-1 a:focus:after {
+	width: 90%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
 }
 /*FOOTER*/
 .container-footer{
