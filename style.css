@@ -12,6 +12,7 @@ body{
     width: 100%;
     height: 100%;
     min-height: 800px;
+
     position: relative;
     background: #112440; 
     background-size: cover;
@@ -21,6 +22,7 @@ body{
 .header{
     padding: 2rem 0; 
     margin-bottom: 150px;
+
     font-family: monaco, Consolas, Lucida Console, monospace;
 }
 .nav-inner{
@@ -79,6 +81,7 @@ body{
     padding: 0 80px;
     margin: 70px;
 }
+/* INTRO */
 .content-intro{
     margin-bottom: 200px;
 }
@@ -87,6 +90,7 @@ body{
 }
 .pre-title{
     margin-bottom: 10px;
+
     font-size: 0.9rem;
     color:#60f0e4;
     font-weight: 100;
@@ -94,15 +98,17 @@ body{
     font-family: monaco, Consolas, Lucida Console, monospace;
 }
 
-
+/* ALL TITLE */
 .title{
     margin-bottom: 0px;
     margin-top: 0px;
+
     font-size: 2rem;
     color:#dbe2f9;
     font-weight: 500;
     line-height:1;
 }
+/* ALL SUBTITLE*/
 .subtitle {
     margin-bottom: 0px;
     margin-top: 10px;
@@ -139,6 +145,7 @@ body{
 .btn-intro:hover{
     background-color:#37a49b;
  }
+ /* ABOUT */
 .content-about{
     margin-bottom: -80px;
 }
@@ -149,6 +156,7 @@ body{
     color:#939dc2;
     max-width: 500px;
 }
+/* ABOUT PHOTO */
 .photo{
     position: relative;
     bottom: 280px;
@@ -173,16 +181,15 @@ body{
     opacity: 1;
     filter: alpha(opacity=100);
     }
-
-
 li{
     color:#60f0e4;
 }
 li span{
     color:#939dc2;
 }
+/* PROJECT */
 .content-project{
-    margin-top: 180px;
+    margin-top: -100px;
 }
 .container-project{
     display: flex;
@@ -193,14 +200,16 @@ li span{
 .projects{
     height: 200px;
     width: 200px;
+    margin: 0 60px;
+
     font-family: monaco, Consolas, Lucida Console, monospace;
     color:#60f0e4;
-    border-radius: 6px;
     font-size:  1rem;
-    margin: 0 60px;
-    background-color:#162e50;
     text-align: center;
 
+    border-radius: 6px;
+   
+    background-color:#162e50;
 }
 
 .projects a{
@@ -214,7 +223,38 @@ li span{
 .projects p{
     font-weight: bold;
 }
+/*PROJECT PHOTOS*/
+/*PHOTO PROJECT MONO*/
 
+/*EXP*
+
+/*EXP PHOTO*/
+.photo-work{
+    position: relative;
+    bottom: 320px;
+    left: 500px;
+    height: 300px;
+    width: 450px;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+.photo-work:after {
+    content: '';
+    background: rgba(201, 26, 26, 0.7); /* фон с прозрачностью 70%*/
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.photo-work:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    }
+
+/*MENTORS*/
 .content-mentors{
     margin-top: 180px;
 }
@@ -227,13 +267,15 @@ li span{
 .container-1{
     height: 400px;
     width: 400px;
+    margin: 40px 40px;
+
     border-radius: 3px;
     background-color:#162e50;
-    margin: 40px 40px;
 }
 .container-1 p{
-    color:#939dc2;
     padding: 20px;
+
+    color:#939dc2;
     font-size: 1rem;
 }
 .container-1 a{
@@ -243,11 +285,12 @@ li span{
 .container-1 a:hover{
     color:#37a49b;
 }
-
+/*FOOTER*/
 .container-footer{
     display: flex;
     justify-content: space-between;
 }
+/*SOCIALS*/
 .social{
     display: flex;
     flex-direction: column;
@@ -266,6 +309,7 @@ li span{
     margin: 0px auto;
     background-color: #60f0e4;
 }
+/*MAIL*/
 .mail{
     display: flex;
     flex-direction: column;
@@ -304,8 +348,9 @@ li span{
     margin: 10px 30px;
     font-size: 1.5rem;
 }
+/*HOW DID*/
 .howdid{
-    margin: 40px 500px;
+    margin: 40px 560px;
     color:#939dc2;
     
 }
